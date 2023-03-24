@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --dark-blue: #253659;
+    --green: #03A696;
+    --light-green: #04BF9D;
+    --orange: #D96941;
+    --red: #A62B1F;
+    --font: 
+    --text-size: 12px;
+    --title-size: 20px;
+    --subtitle-size: 16px;
+}
+
+body {
+    background-color: var(--dark-blue);
+}
