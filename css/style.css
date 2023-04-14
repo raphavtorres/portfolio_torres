@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 :root {
@@ -12,30 +13,31 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(180deg, #0D1526 0%, #0A101D 0%, #0D1526 0.01%, #1E315A 100%);
+    margin: auto;
+    /* background: linear-gradient(180deg, #0D1526 0%, #0A101D 0%, #0D1526 0.01%, #1E315A 100%); */
     font-family: 'Lexend', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-
 nav {
-    align-items: center;
-    height: 8vh;
-    width: 80vw;
+    width: 100vw;
+    height: 7vh;
     margin: auto;
+    background-color: #25365986;
+    position: fixed;
+    z-index: 5;
 }
 
 #nav-list {
-    display: flex;
     margin: auto;
+    margin-top: 20px;
     width: 40vw;
+    display: flex;
     justify-content: space-around;
-    margin-top: 32px;
 }
 
 #nav-list a {
-    margin: 20px;
     transition: 0.5;
     color: white;
     text-decoration: none;
@@ -48,16 +50,28 @@ nav {
 }
 
 main {
-    width: 60vw;
     margin: auto;
+}
+
+.parallax {
+    height: 100vh!important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("../images/dragon_dark_blue_background_paralax_darker.jpg");
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 50% 30%;
     gap: 10%;
     align-self: space-around;
-    height: 60vh;
+    width: 60vw;
 }
 
 .grid-item-1 {
@@ -67,16 +81,55 @@ main {
 h1 {
     color: var(--yellow);
     font-size: 60px;
-    font-family: var(--font);
 }
 
 h2, p {
     color: white;
 }
 
-#rectangle {
+#btn_read_more {
+    margin: 4em 0;
+    width: 10em;
+    height: 3em;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--yellow);
+    transition: 0.5s;
+}
+
+#btn_read_more:hover {
+    background-color: white;
+}
+
+#btn_read_more p {
+    color: var(--dark-blue);
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#img_personal {
     width: 300px;
     height: 300px;
-    background: rgba(217, 217, 217, 0.38);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/image.png");
     border-radius: 10px;
+}
+
+section.test-flexbox{
+    height: 100vh!important;
+    background-color: rgb(10, 167, 140);
+}
+
+.container-flex {
+    width: 50%;
+    margin: 5em auto;
+}
+
+.box-flex {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
 }
