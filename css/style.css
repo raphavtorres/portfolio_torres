@@ -118,18 +118,36 @@ h2, p {
 }
 
 section.test-flexbox{
-    height: 100vh!important;
+    min-height: fit-content;
     background-color: rgb(10, 167, 140);
 }
 
 .container-flex {
-    width: 50%;
-    margin: 5em auto;
+    height: 90vh;
+    max-width: 80%;
+    /* margin: 5em auto; */
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px
 }
 
 .box-flex {
     background-color: white;
-    height: 200px;
+    border-radius: 10px;
+}
+
+.box-flex-big {
+    height: 20rem;
     width: 200px;
-    margin: 10px;
+
+}
+.box-flex-small {
+    height: 100px;
+    width: 200px;
+}
+.box-flex-medium {
+    height: 10rem;
+    width: 10rem;
 }
